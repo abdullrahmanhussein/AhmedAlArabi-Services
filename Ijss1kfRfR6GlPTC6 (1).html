@@ -1,0 +1,314 @@
+<html><head><base href="https://t.me/AhmedAlArabi5">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Media Services - AhmedAlArabi</title>
+<style>
+:root {
+  --primary: #4c1dff;
+  --secondary: #0088cc;
+  --dark: #1a1a1a;
+  --light: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: var(--light);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  background: linear-gradient(180deg, rgba(76,29,255,0.1) 0%, rgba(0,0,0,0) 100%);
+  border-radius: 20px;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(76,29,255,0.5);
+  margin-bottom: 1rem;
+}
+
+.telegram-banner {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, #0088cc, #005580);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0,136,204,0.3);
+  z-index: 100;
+  text-align: center;
+  max-width: 300px;
+}
+
+.telegram-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: white;
+  color: #0088cc;
+  padding: 15px 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.telegram-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.service-card {
+  background: rgba(255,255,255,0.03);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid rgba(76,29,255,0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(76,29,255,0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(76,29,255,0.3);
+}
+
+.service-title {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.service-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-field {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(76,29,255,0.2);
+  padding: 1rem;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: rgba(255,255,255,0.08);
+}
+
+.submit-btn {
+  background: linear-gradient(45deg, var(--primary), #6e45ff);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.submit-btn:disabled {
+  background: #444;
+  cursor: not-allowed;
+}
+
+.timer {
+  margin-top: 1rem;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.success-message {
+  color: #4CAF50;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.contact-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(76,29,255,0.2);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .telegram-banner {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    top: auto;
+    transform: none;
+    width: calc(100% - 40px);
+    max-width: none;
+  }
+  
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="logo">AhmedAlArabi Services</h1>
+      <p>Premium Social Media Growth Services</p>
+    </header>
+
+    <div class="telegram-banner">
+      <h3 style="font-size: 1.2rem; margin-bottom: 10px;">Need Instant Service?</h3>
+      <p style="opacity: 0.9; margin-bottom: 15px;">Contact me directly on Telegram for premium services and faster delivery!</p>
+      <a href="https://t.me/AhmedAlArabi5" class="telegram-button" target="_blank">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.74 8.33c-.43 4.58-2.31 15.7-2.31 15.7s-.16.37-.67.39c-.51.02-.71-.38-.71-.38l-4.77-3.89-.03-.01c.18-.16.87-.77 2.04-1.89 1.22-1.16.71-1.73-.26-.99l-5.6 3.98s-.65.39-1.2.12c-.55-.27-.54-.79-.54-.79l1.35-8.28c.47-2.39 2.86-4.73 5.22-4.73 0 0 7.22-.03 7.48.05z"/>
+        </svg>
+        @AhmedAlArabi5
+      </a>
+    </div>
+
+    <div class="services-container">
+      <div class="service-card">
+        <span class="contact-badge">Premium Service</span>
+        <h3 class="service-title">📈 TikTok Followers</h3>
+        <form class="service-form" onsubmit="handleService(event, 'followers')">
+          <input type="text" class="input-field" placeholder="Enter TikTok Username" required>
+          <button type="submit" class="submit-btn">Get Followers</button>
+          <div class="timer" id="followers-timer"></div>
+        </form>
+      </div>
+
+      <div class="service-card">
+        <span class="contact-badge">Premium Service</span>
+        <h3 class="service-title">❤️ TikTok Likes</h3>
+        <form class="service-form" onsubmit="handleService(event, 'likes')">
+          <input type="text" class="input-field" placeholder="Enter Video URL" required>
+          <button type="submit" class="submit-btn">Get Likes</button>
+          <div class="timer" id="likes-timer"></div>
+        </form>
+      </div>
+
+      <div class="service-card">
+        <span class="contact-badge">Premium Service</span>
+        <h3 class="service-title">👁️ TikTok Views</h3>
+        <form class="service-form" onsubmit="handleService(event, 'views')">
+          <input type="text" class="input-field" placeholder="Enter Video URL" required>
+          <button type="submit" class="submit-btn">Get Views</button>
+          <div class="timer" id="views-timer"></div>
+        </form>
+      </div>
+
+      <div class="service-card">
+        <span class="contact-badge">Premium Service</span>
+        <h3 class="service-title">🔄 TikTok Shares</h3>
+        <form class="service-form" onsubmit="handleService(event, 'shares')">
+          <input type="text" class="input-field" placeholder="Enter Video URL" required>
+          <button type="submit" class="submit-btn">Get Shares</button>
+          <div class="timer" id="shares-timer"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function handleService(event, service) {
+      event.preventDefault();
+      const form = event.target;
+      const input = form.querySelector('input');
+      const button = form.querySelector('button');
+      const timer = document.getElementById(`${service}-timer`);
+      
+      input.disabled = true;
+      button.disabled = true;
+
+      let timeLeft = 300;
+      timer.innerHTML = `<div class="success-message">✨ Request submitted! Processing your order...</div>`;
+      
+      const interval = setInterval(() => {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        timer.innerHTML = `
+          <div style="margin-bottom: 10px">⏳ Next request available in: ${minutes}:${seconds.toString().padStart(2, '0')}</div>
+          <div style="color: #4CAF50; background: rgba(76,255,29,0.1); padding: 10px; border-radius: 8px; margin-top: 10px;">
+            💫 Want instant delivery? Contact <a href="https://t.me/AhmedAlArabi5" style="color: #4CAF50; text-decoration: underline;">@AhmedAlArabi5</a> on Telegram
+          </div>
+        `;
+        
+        if (--timeLeft < 0) {
+          clearInterval(interval);
+          input.disabled = false;
+          button.disabled = false;
+          timer.innerHTML = `
+            <div style="background: linear-gradient(45deg, rgba(76,29,255,0.1), rgba(76,29,255,0.2)); padding: 15px; border-radius: 12px; margin-top: 15px;">
+              ✨ Ready for more? Contact <a href="https://t.me/AhmedAlArabi5" style="color: #4c1dff; text-decoration: underline; font-weight: 600;">@AhmedAlArabi5</a> for premium services!
+            </div>
+          `;
+        }
+      }, 1000);
+    }
+  </script>
+</body></html>
